@@ -60,10 +60,10 @@ def log_confusion_matrix(cm, labels):
     run.log_confusion_matrix('confusion_matrix', cm_json)
     
     # log confusion matrix as image
-    log_confusion_matrix_image(cm, labels, normalize=False, log_name='confusion_matrix_unnormalized', title='Confusion matrix')
+    log_confusion_matrix_image(cm, labels, normalize=False, log_name='confusion_matrix_unnormalized', title='Confusion Matrix')
     
     # log normalized confusion matrix as image
-    log_confusion_matrix_image(cm, labels, normalize=True, log_name='confusion_matrix_normalized', title='Normalized confusion matrix')
+    log_confusion_matrix_image(cm, labels, normalize=True, log_name='confusion_matrix_normalized', title='Normalized Confusion Matrix')
 
 
 def main(args):
